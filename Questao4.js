@@ -1,5 +1,5 @@
 function formatacao (objeto){
-    return `${objeto.rua}, ${objeto.numero} - ${objeto.cidade} - CEP: ${objeto.cep}`
+    return `${objeto.rua}, ${objeto.numero} - ${objeto.cidade} - CEP: ${objeto.cep}`;
 }
 
 
