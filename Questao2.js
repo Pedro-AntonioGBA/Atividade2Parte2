@@ -8,13 +8,13 @@ const jsonString = `{
 
 let pessoas = JSON.parse(jsonString);
 
-let string = ""
+let string = "";
 
 for (i of pessoas.usuarios){
     if (string != ""){
-        string += ", "
+        string += ", ";
     }
-    string += i.email
+    string += i.email;
 }
 
 console.log(string);
