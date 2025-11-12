@@ -1,17 +1,17 @@
 function precificacao(json){
     let sacola = JSON.parse(json);
-    let string = ""
+    let string = "";
     
     for (i of sacola.produtos){
 
         if (i.preco > 50){
             if (string != ""){
-            string += ", "
+            string += ", ";
             }   
             string += i.nome;
         }
     }
-    return string
+    return string;
 }
 
 const produtosJSON = `{
@@ -23,4 +23,4 @@ const produtosJSON = `{
   ]
   }`;
 
-console.log(precificacao(produtosJSON))
+console.log(precificacao(produtosJSON));
