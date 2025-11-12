@@ -1,5 +1,5 @@
-function precificacao(){
-    let sacola = JSON.parse(produtosJSON);
+function precificacao(json){
+    let sacola = JSON.parse(json);
     let string = ""
     
     for (i of sacola.produtos){
@@ -14,7 +14,6 @@ function precificacao(){
     return string
 }
 
-
 const produtosJSON = `{
   "produtos": [
   {"nome": "Mouse", "preco": 25.90},
@@ -24,6 +23,4 @@ const produtosJSON = `{
   ]
   }`;
 
-let sacola = JSON.parse(produtosJSON);
-
-console.log(precificacao(sacola))
+console.log(precificacao(produtosJSON))
